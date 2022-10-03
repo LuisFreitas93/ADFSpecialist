@@ -1,0 +1,9 @@
+{
+	"name": "ADFTutorialDataFactory-lfreitas",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "83597539-d7ce-4e1f-890e-82933406a861",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}
