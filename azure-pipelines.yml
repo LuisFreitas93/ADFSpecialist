@@ -10,10 +10,12 @@ pool:
   vmImage: windows-2022
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: SSISDeploy@1
+  inputs:
+    sourcePath: '"C:\Users\v-lfreitas\source\repos\Luís Testing\Luís Testing\bin\Development\Luís Testing.ispac"'
+    destinationType: 'ssisdb'
+    destinationServer: 'WINDOWS-VSCF65A'
+    destinationPath: '/SSISDB/410/[Luís Testing]'
+    authType: 'win'
+    whetherOverwrite: 'yes'
+    whetherContinue: 'yes'
