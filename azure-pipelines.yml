@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: windows-2022
+  vmImage: Luis #windows-2022
 
 steps:
 - task: SSISDeploy@1
@@ -16,6 +16,6 @@ steps:
     destinationType: 'ssisdb'
     destinationServer: 'WINDOWS-VSCF65A'
     destinationPath: '/SSISDB/410/[Luís Testing]'
-    authType: 'winAuth'
+    authType: 'win'
     whetherOverwrite: 'yes'
     whetherContinue: 'yes'
