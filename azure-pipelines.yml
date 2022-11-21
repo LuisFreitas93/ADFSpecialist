@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: WINDOWS-VSCF65A
+  vmImage: Default
 
 steps:
 - task: SSISDeploy@1
