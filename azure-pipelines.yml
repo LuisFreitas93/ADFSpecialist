@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: Luis #windows-2022
+  vmImage: windows-2022
 
 steps:
 - task: SSISDeploy@1
