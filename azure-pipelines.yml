@@ -7,8 +7,9 @@ trigger:
 - main
 
 pool:
-  vmImage: Default
-
+  #vmImage: Default
+  name: default
+  
 steps:
 - task: SSISDeploy@1
   inputs:
