@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: windows-2022
+  vmImage: WINDOWS-VSCF65A
 
 steps:
 - task: SSISDeploy@1
