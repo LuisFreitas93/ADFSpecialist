@@ -16,6 +16,6 @@ steps:
     destinationType: 'ssisdb'
     destinationServer: 'WINDOWS-VSCF65A'
     destinationPath: '/SSISDB/410/[Luís Testing]'
-    authType: 'win'
+    authType: 'winAuth'
     whetherOverwrite: 'yes'
     whetherContinue: 'yes'
