@@ -12,16 +12,18 @@ pool:
   
 steps:
 - task: SSISDeploy@1
+  displayName: 'Deploy'
   inputs:
     sourcePath: '"C:\Users\v-lfreitas\source\repos\Luís Testing\Luís Testing\bin\Development\Luís Testing.ispac"'
     destinationType: 'ssisdb'
     destinationServer: 'WINDOWS-VSCF65A'
     destinationPath: '/SSISDB/410/[Luís Testing]'
     authType: 'win'
-    whetherOverwrite: 'yes'
-    whetherContinue: 'yes'
+    #whetherOverwrite: 'yes'
+    #whetherContinue: 'yes'
 
 - task: SSISCatalog@0
+  displayName: 'SSISDB Config'
   inputs:
     configSource: 'filePath'
     configPath: '"C:\Users\v-lfreitas\source\repos\Luís Testing\Luís Testing\bin\Development\Config.txt"'
