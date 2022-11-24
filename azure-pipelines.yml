@@ -19,6 +19,8 @@ steps:
     destinationServer: 'WINDOWS-VSCF65A'
     destinationPath: '/SSISDB/DDFO'
     authType: 'win'
+    whetherOverwrite: 'yes'
+    whetherContinue: 'no'
 
 
 - task: SSISDeploy@1
@@ -29,6 +31,8 @@ steps:
     destinationServer: 'WINDOWS-VSCF65A'
     destinationPath: '/SSISDB/DDFO'
     authType: 'win'
+    whetherOverwrite: 'yes'
+    whetherContinue: 'no'
 
 
 - task: SSISDeploy@1
@@ -39,6 +43,8 @@ steps:
     destinationServer: 'WINDOWS-VSCF65A'
     destinationPath: '/SSISDB/DDFO'
     authType: 'win'
+    whetherOverwrite: 'yes'
+    whetherContinue: 'no'
 
 
 - task: SSISCatalog@0
