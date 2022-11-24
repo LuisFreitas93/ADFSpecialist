@@ -14,7 +14,7 @@ steps:
 - task: SSISDeploy@1
   displayName: 'Deploy APP'
   inputs:
-    sourcePath: '""C:\Users\v-lfreitas\OneDrive - Microsoft\Cases Files\Suhas\Ispac\APP.ispac""'
+    sourcePath: 'C:\Users\v-lfreitas\OneDrive - Microsoft\Cases Files\Suhas\Ispac\APP.ispac'
     destinationType: 'ssisdb'
     destinationServer: 'WINDOWS-VSCF65A'
     destinationPath: '/SSISDB/DDFO'
@@ -24,7 +24,7 @@ steps:
 - task: SSISDeploy@1
   displayName: 'Deploy Reference_ETL'
   inputs:
-    sourcePath: '""C:\Users\v-lfreitas\OneDrive - Microsoft\Cases Files\Suhas\Ispac\Reference_ETL.ispac""'
+    sourcePath: 'C:\Users\v-lfreitas\OneDrive - Microsoft\Cases Files\Suhas\Ispac\Reference_ETL.ispac'
     destinationType: 'ssisdb'
     destinationServer: 'WINDOWS-VSCF65A'
     destinationPath: '/SSISDB/DDFO'
@@ -33,7 +33,7 @@ steps:
 - task: SSISDeploy@1
   displayName: 'Deploy Feed_ETL'
   inputs:
-    sourcePath: '""C:\Users\v-lfreitas\OneDrive - Microsoft\Cases Files\Suhas\Ispac\Reference_ETL.ispac""'
+    sourcePath: 'C:\Users\v-lfreitas\OneDrive - Microsoft\Cases Files\Suhas\Ispac\Feed_ETL.ispac'
     destinationType: 'ssisdb'
     destinationServer: 'WINDOWS-VSCF65A'
     destinationPath: '/SSISDB/DDFO'
@@ -43,7 +43,7 @@ steps:
   displayName: 'SSISDB Config'
   inputs:
     configSource: 'filePath'
-    configPath: '""C:\Users\v-lfreitas\OneDrive - Microsoft\Cases Files\Suhas\Ispac\configure_ssis_catalog.json""'
+    configPath: 'C:\Users\v-lfreitas\OneDrive - Microsoft\Cases Files\Suhas\Ispac\configure_ssis_catalog.json'
     rollBackOnError: true
     targetServer: 'WINDOWS-VSCF65A'
     authType: 'win'
