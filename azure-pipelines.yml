@@ -12,17 +12,6 @@ pool:
   
 steps:
 - task: SSISDeploy@1
-  displayName: 'Deploy APP'
-  inputs:
-    sourcePath: '""C:\Users\v-lfreitas\OneDrive - Microsoft\Cases Files\Suhas\Ispac\APP.ispac""'
-    destinationType: 'ssisdb'
-    destinationServer: 'WINDOWS-VSCF65A'
-    destinationPath: '/SSISDB/DDFO'
-    authType: 'win'
-    whetherOverwrite: 'yes'
-    whetherContinue: 'no'
-
-- task: SSISDeploy@1
   inputs:
     sourcePath: 'C:\Users\v-lfreitas\OneDrive - Microsoft\Cases Files\Suhas\Ispac\Feed_ETL.ispac'
     destinationType: 'ssisdb'
