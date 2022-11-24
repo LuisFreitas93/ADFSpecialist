@@ -11,17 +11,6 @@ pool:
   name: default
   
 steps:
-- task: SSISDeploy@1
-  displayName: 'Deploy Feed_ETL'
-  inputs:
-    sourcePath: '""C:\Users\v-lfreitas\OneDrive - Microsoft\Cases Files\Suhas\Ispac\Feed_ETL.ispac""'
-    destinationType: 'ssisdb'
-    destinationServer: 'WINDOWS-VSCF65A'
-    destinationPath: '/SSISDB/DDFO'
-    authType: 'win'
-    whetherOverwrite: 'yes'
-    whetherContinue: 'no'
-
 
 - task: SSISDeploy@1
   displayName: 'Deploy Reference_ETL'
