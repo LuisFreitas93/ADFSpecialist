@@ -42,8 +42,8 @@ steps:
 - task: SSISCatalog@0
   displayName: 'SSISDB Config'
   inputs:
-    configSource: 'filePath'
+    # configSource: 'filePath'
     configPath: 'C:\Users\v-lfreitas\OneDrive - Microsoft\Cases Files\Suhas\Ispac\configure_ssis_catalog.json'
-    rollBackOnError: true
+    # rollBackOnError: true
     targetServer: 'WINDOWS-VSCF65A'
     authType: 'win'
